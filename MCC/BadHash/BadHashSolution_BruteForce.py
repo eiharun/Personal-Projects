@@ -40,12 +40,17 @@ def main(hash):
         #print(sequence)
         message = "masoncc{" + msg.join(sequence) + "}"
         if BadHashCTF.hash(message) == hash:
+            with open(r'home\harunlap1\2022\MCC\BadHash\flag.txt', 'w') as f:
+                f.write(message)
             break
         print(message)
 
 hash = input('Input hash: ')
+
 msg_hash = ""
 message_list = []
 msg = ''
 #msg_hash = BadHashCTF.hash(msg.join(main()))
 main(hash)
+
+

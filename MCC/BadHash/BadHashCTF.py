@@ -23,7 +23,7 @@ def hash(message):
 		if len(add_str) < 2:
 			add_str="0"+add_str
 		hash_string+=add_str
-	#print('0x' + hash_string)
+	print('0x' + hash_string)
 	return "0x"+hash_string
 #message = input("message>")
 
