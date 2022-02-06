@@ -38,12 +38,11 @@ def main(hash):
     while True:
         sequence = next(sequence)
         #print(sequence)
-        message = "masoncc{" + msg.join(sequence) + "}"
-        if BadHashCTF.hash(message) == hash:
+        if BadHashCTF.hash(msg.join(sequence)) == hash:
             with open(r'flag.txt', 'a') as f:
-                f.write(message + "\nBF")
+                f.write("masoncc{" + msg.join(sequence) + "}" + "\nBF2")
             break
-        print(message)
+        print("masoncc{" + msg.join(sequence) + "}")
 
 hash = input('Input hash: ')
 

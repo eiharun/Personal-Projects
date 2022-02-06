@@ -2,7 +2,7 @@ import BadHashCTF
 
 #Used from https://gist.github.com/pazdera/1121315
 import string
-ALLOWED_CHARACTERS = string.printable
+ALLOWED_CHARACTERS = string.ascii_letters
 NUMBER_OF_CHARACTERS = len(ALLOWED_CHARACTERS)
 
 def characterToIndex(char):
@@ -41,7 +41,7 @@ def main(hash):
         message = "masoncc{" + msg.join(sequence) + "}"
         if BadHashCTF.hash(message) == hash:
             with open(r'flag.txt', 'a') as f:
-                f.write(message + "\nBF")
+                f.write(message + "\nBF AL")
             break
         print(message)
 
