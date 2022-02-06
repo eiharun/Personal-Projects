@@ -40,9 +40,9 @@ def main(hash):
         #print(sequence)
         if BadHashCTF.hash(msg.join(sequence)) == hash:
             with open(r'flag.txt', 'a') as f:
-                f.write("masoncc{" + msg.join(sequence) + "}")
+                f.write("masoncc{" + msg.join(sequence) + "}"+ "\nBF2 AL")
             break
-        print("masoncc{" + msg.join(sequence) + "}" + "\nBF2 AL")
+        print("masoncc{" + msg.join(sequence) + "}")
 
 hash = input('Input hash: ')
 
