@@ -1,0 +1,41 @@
+Description: AI art is cool! 
+
+
+Challenge Creation Info
+
+PING{C1ph3rz+St3g0}
+
+Vigenere: Key=LOL
+
+AWYR{Q1as3fk+Dh3r0}
+
+Image: joy.png
+Encrypted Flag is appended to joy.png
+
+Clue: Clue.txt 
+-- -.--
+..-. .-. .. . -. -..
+..--.- .- ..--.-
+... -.- . -..
+-- .
+..--.- - ..--.-
+---
+..--.- -... ..--.-
+.-. .. -. --.
+This photo is funny "Pvb=OLO"!
+.... .. --
+... --- -- .
+..--.- .- ..--.-
+...- --- -.-. .- -.. ---
+..--.- ... ..--.-
+..-. --- .-.
+..--.- .... ..--.-
+.. ...
+-- . .- .-..
+
+Clue.txt & joy.png are put in a .zip file 
+and hidden in AIART.jpg using StegHide -nopassword
+
+
+
+
