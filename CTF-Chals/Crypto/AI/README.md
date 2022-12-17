@@ -1,4 +1,4 @@
-## The challenge file is AIART.jpg
+## The challenge file is [AIART.jpg](AIART.jpg)
 
 Description: AI art is cool! 
 
@@ -43,3 +43,7 @@ This photo is funny "Pvb=OLO"!
 
 Clue.txt & joy.png are put in a .zip file 
 and hidden in AIART.jpg using StegHide with no password
+
+| Contents: | [youfoundme.zip](contents/youfoundme.zip) |
+
+
