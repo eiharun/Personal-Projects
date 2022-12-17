@@ -1,2 +1,0 @@
-# Cryptopals
-# PicoCTF Gym
