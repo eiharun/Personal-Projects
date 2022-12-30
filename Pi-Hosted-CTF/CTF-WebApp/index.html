@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <title>PiCTF!</title>
+    <head>
+        <style>
+            table{
+                width: 100%;
+            }
+            caption{
+                padding: 20px;
+                background-color: azure;
+            }
+            th{
+                
+                height:40px;
+                background-color: blue;
+                color: whitesmoke;
+                font-size: 20pt;
+            }
+            td{
+                background-color: green;
+                color: white;
+                height:20px;
+                
+            }
+            a{
+                padding:10px;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .board:link, .board:visited{
+                
+                color:white;
+                background-color:green;
+            }
+            .board:hover, .board:active{
+               
+                color:green;
+                background-color:lightgreen;
+            }
+            .board_title{
+                color: white;
+                font-size: 26px;
+                font-weight: bolder;
+            }
+            th, td{
+                padding: 30px;
+                text-align: center;
+            }
+            footer{
+                text-align: center;
+                padding:10px;
+                color:grey;
+                font-style: oblique;
+            }
+            .userinfo{
+                text-align: right;
+                
+            }
+        </style>
+        <!--h4 align="right" padding="10px" margin="20px">Login | Register | Scores | Profile</h4--><!--Create these pages-->
+        <div class="userinfo">
+        <a href="login.php">Login</a>
+        <a href="register.php">Register</a>
+        </div>
+    </head>
+    <body>
+        <h1 align="center">Welcome to PiCTF!</h1>
+        
+        <table align="center">
+            <caption>Jeapordy Table</caption>
+            <!--Titles-->
+            <tr>
+                <th><a href="Table/Crypto-0Category.html" class="board_title">Crypto</a></th>
+                <th><a href="Table/Forensics-0Category.html" class="board_title">Forensics</a></th>
+                <th><a href="Table/Linux-0Category.html" class="board_title">Linux</a></th>
+                <th><a href="Table/OSINT-0Category.html" class="board_title">OSINT</a></th>
+                <th><a href="Table/Web-0Category.html" class="board_title">Web</a></th>
+                <th><a href="Table/Misc-0Category.html" class="board_title">Misc</a></th>
+            </tr>
+            <!--100 Points-->
+            <tr>
+                <td>
+                    <a href="Table/Crypto-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-Crypto">
+                        <input type="text", id="Crypto-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark after correct submission-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Forensics-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-Forensics">
+                        <input type="text", id="ForLinux-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Linux-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-Linux">
+                        <input type="text", id="Linux-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/OSINT-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-OSINT">
+                        <input type="text", id="OSINT-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Web-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-Web">
+                        <input type="text", id="Web-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Misc-100.html" target="_blank" class="board">100</a>
+                    <br></br>
+                    <div id="100-Misc">
+                        <input type="text", id="Misc-100-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+            </tr>
+            <!--200 Points-->
+            <tr>
+                <td>
+                    <a href="Table/Crypto-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-Crypto">
+                        <input type="text", id="Crypto-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Forensics-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-Forensics">
+                        <input type="text", id="ForLinux-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Linux-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-Linux">
+                        <input type="text", id="Linux-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/OSINT-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-OSINT">
+                        <input type="text", id="OSINT-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Web-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-Web">
+                        <input type="text", id="Web-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Misc-200.html" target="_blank" class="board">200</a>
+                    <br></br>
+                    <div id="200-Misc">
+                        <input type="text", id="Misc-200-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+            </tr>
+            <!--300 Points-->
+            <tr>
+                <td>
+                    <a href="Table/Crypto-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-Crypto">
+                        <input type="text", id="Crypto-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Forensics-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-Forensics">
+                        <input type="text", id="ForLinux-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Linux-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-Linux">
+                        <input type="text", id="Linux-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/OSINT-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-OSINT">
+                        <input type="text", id="OSINT-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Web-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-Web">
+                        <input type="text", id="Web-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Misc-300.html" target="_blank" class="board">300</a>
+                    <br></br>
+                    <div id="300-Misc">
+                        <input type="text", id="Misc-300-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+            </tr>
+            <!--400 Points-->
+            <tr>
+                <td>
+                    <a href="Table/Crypto-400.html" target="_blank" class="board" class="board">400</a>
+                    <br></br>
+                    <div id="400-Crypto">
+                        <input type="text", id="Crypto-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Forensics-400.html" target="_blank" class="board">400</a>
+                    <br></br>
+                    <div id="400-Forensics">
+                        <input type="text", id="ForLinux-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Linux-400.html" target="_blank" class="board">400</a>
+                    <br></br>
+                    <div id="400-Linux">
+                        <input type="text", id="Linux-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/OSINT-400.html" target="_blank" class="board">400</a>
+                    <br></br>
+                    <div id="400-OSINT">
+                        <input type="text", id="OSINT-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Web-400.html" target="_blank" class="board">400</a>
+                    <br></br>
+                    <div id="400-Web">
+                        <input type="text", id="Web-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Misc-400.html" target="_blank" class="board">400</a>
+                    <br></br>
+                    <div id="400-Misc">
+                        <input type="text", id="Misc-400-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+            </tr>
+            <!--500 Points-->
+            <tr>
+                <td>
+                    <a href="Table/Crypto-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-Crypto">
+                        <input type="text", id="Crypto-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Forensics-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-Forensics">
+                        <input type="text", id="ForLinux-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Linux-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-Linux">
+                        <input type="text", id="Linux-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/OSINT-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-OSINT">
+                        <input type="text", id="OSINT-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Web-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-Web">
+                        <input type="text", id="Web-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+                <td>
+                    <a href="Table/Misc-500.html" target="_blank" class="board">500</a>
+                    <br></br>
+                    <div id="500-Misc">
+                        <input type="text", id="Misc-500-flag", title="flag-input">
+
+                        <button>Submit Flag</button><!---Javascript Node.js Serverside checking-->
+                        <!---Auto Hide input with check mark-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+    </body>
+    <footer>
+        <span>PiCTF, by eiHarun |   </span>
+        <img src="resources/github.png" style="width:30ox;height:30px;" align=center>
+        <a href="https://www.github.io/eiharun" target="_blank">github.io/eiharun |</a>
+        <a href="https://www.eiharun.github.io" target="_blank">eiharun.github.io</a>
+    </footer>
+</html>
