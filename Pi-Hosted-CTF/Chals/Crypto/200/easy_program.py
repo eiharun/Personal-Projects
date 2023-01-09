@@ -1,25 +1,20 @@
 import random
-flag = 'PING{b1twhyZe_0p3r4t0R}'
+flag = 'PING{FakeFlag}'
 
 digit = random.randint(0,15)
-def convert_bin(input):
-    output = ''.join(str(ord(i)) for i in input)
-    print(output)
-    return bin(int(output))
+def str_list():
+    flag_lst=[]
+    for i in flag:
+        flag_lst.append(ord(i))
+    return flag_lst
 
-#print(digit, flag, convert_bin(flag))
-
-def shift(flag_in):
-    flag_out = int(flag_in,2)<<digit
+def shift(flag_in=list):
+    flag_out=[]
+    for i in flag_in:
+        flag_out.append(i<<digit)
     return flag_out
 
-def revert(nums):
-    _=[]
-    result=[]
-    for i in str(nums):
-        
-        result.append(chr(int(i)))
-        
-    return result
+def revert(flag_out):
+    return ''.join(str(i) for i in flag_out)
 
-print(revert(shift(convert_bin(flag))))
+print(revert(shift(str_list())))
