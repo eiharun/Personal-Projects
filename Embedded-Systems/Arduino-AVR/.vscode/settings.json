@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "interrupt.h": "c",
+    "io.h": "c",
+    "sleep.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
