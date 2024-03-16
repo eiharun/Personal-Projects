@@ -1,1 +1,0 @@
-# My WebApp Creation Learning Journey with Javascript
