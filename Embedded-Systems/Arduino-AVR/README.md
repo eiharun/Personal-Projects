@@ -8,6 +8,14 @@
 2. [Button & LED](BUTTON-IO-LED/README.md)
 3. [Timer Interrupt](Timer-Interrupt/README.md)
 4. [Hardware Interrupt](Hardware-Interrupt/README.md)
+5. [UART Echo](USART-echo/README.md)
+6. [SPI Echo](SPI-echo/README.md)
+
+...
+
+Final Goal is to create a HAL for AVR in C
+
+[Hardware Abstraction Layer](HAL/README.md)
 
 > To attach usb to wsl in ps `usbipd attach --wsl --busid 1-2` & `usbipd bind --force --busid 1-2` in ps admin & `sudo chmod a+rw /dev/ttyACM0` in wsl
 

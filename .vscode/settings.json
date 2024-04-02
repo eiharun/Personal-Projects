@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "io.h": "c",
+    "io90pwm316.h": "c",
+    "string_view": "c",
+    "bitset": "c",
+    "__locale": "c",
+    "__string": "c",
+    "string": "c",
+    "iom328p.h": "c",
+    "stdint.h": "c",
+    "delay.h": "c",
+    "stdio.h": "c",
+    "interrupt.h": "c",
+    "string.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "idf.port": "/dev/ttyUSB0"
+}
